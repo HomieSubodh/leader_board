@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Barlow:wght@200;500&family=Chakra+Petch:wght@600&family=Dosis:wght@400;500;600;700&family=Fredoka+One&family=Gugi&family=Lobster+Two:ital@0;1&family=Manrope&family=Poppins:wght@300;500&family=Space+Grotesk:wght@300;400;500&family=Staatliches&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Barlow:wght@200;500&family=Chakra+Petch:wght@600&family=Dosis:wght@400;500;600;700&family=Fredoka+One&family=Gugi&family=Lobster+Two:ital@0;1&family=Manrope&family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;500&family=Roboto:wght@300;400&family=Space+Grotesk:wght@300;400;500&family=Staatliches&family=Yeseva+One&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+::selection {
+    background-color: #562EFF;
+    color: white;
 }
 
 body {
@@ -48,10 +53,6 @@ header .first_span {
     display: flex;
 }
 
-lord-icon {
-    /* border: 2px solid; */
-}
-
 nav {
     margin-left: 18%;
     margin-right: 18%;
@@ -59,22 +60,27 @@ nav {
     justify-content: space-between;
 }
 
-nav .first_span h2 {
-    text-shadow: 3px 3px lightgray;
-    font-size: 35px;
-    cursor: pointer;
-}
-
 .first_span i {
     font-size: 30px;
     margin-right: 10px;
 }
 
-.second_span,
-.first_span {
+.second_span, .first_span {
     display: flex;
     padding-top: 20px;
     /* border: 2px solid; */
+}
+
+.first_span h2 > a {
+    text-decoration: none;
+    text-shadow: 3px 3px lightgray;
+    font-size: 35px;
+    cursor: pointer;
+    color: ghostwhite;
+}
+
+.first_span h2 > a:active {
+    text-decoration: none;
 }
 
 .second_span .image {
@@ -114,8 +120,8 @@ nav .first_span h2 {
 }
 
 
-/* main body part  */
-.first_section {
+                            /*! main body part  */
+.first_section, .second_section{
     box-sizing: border-box;
     padding: 1%;
     background-color: #FFFFFF;
@@ -130,16 +136,20 @@ nav .first_span h2 {
     -o-border-radius: 20px;
 }
 
-.first_section h1 {
+h1{
     color: #562EFF;
     font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .first_sec_div_one .image_gallery {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 30%;
+    justify-content: center;
+    gap: 20%;
+    row-gap: 20px;
 }
 
 .image_gallery .people_image {
@@ -208,5 +218,108 @@ nav .first_span h2 {
 hr {
     border: none;
     border-bottom: 2px solid #D1D1D1;
+}
 
+.main_div {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-direction: row;
+    column-gap: 10%;
+    row-gap: 30px;
+}
+
+.div_two_inner {
+    display: flex;
+    gap: 5%;
+    width: 400px;
+}
+
+.div_two_inner > .inner_image_div > img {
+    height: 117px;
+    width: 177px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    object-fit: cover;
+}
+
+/* second section  */
+
+.second_section_main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12%;
+}
+
+.cards {
+    height: 269.79px;
+    width: 252.42px;
+    /* border: 2px solid; */
+    justify-content: center;
+    padding: 1.5%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: rgb(247 247 247) 3px 2px 12px 2px;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.cards img {
+    height: 104px;
+    width: 224px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cards > h3 {
+    font-family: 'Barlow', sans-serif;
+    line-height: 30px;
+}
+
+.cards > h6 {
+    font-family: 'Barlow', sans-serif;
+    color: #ED6B4F;
+}
+
+.rate-timer {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    margin-top: 15px;
+}
+
+.rating_star > i {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.rating_star > i:nth-child(5) {
+    color: #AEAEAE;
+}
+
+.ratings {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(247, 122, 20);
+}
+
+.timer, .timer > span{
+    background-color: #FFE4E8;
+    height: fit-content;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #FF4A60;
+    margin-top: 2.5%;
+    border-radius: 10px;
 }
