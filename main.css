@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Barlow:wght@200;500&family=Chakra+Petch:wght@600&family=Dosis:wght@400;500;600;700&family=Fredoka+One&family=Gugi&family=Lobster+Two:ital@0;1&family=Manrope&family=Poppins:wght@300;500&family=Space+Grotesk:wght@300;400;500&family=Staatliches&family=Yeseva+One&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     height: 1000px;
-    /*background-color: #F3F1FF;*/
-    animation: bg-move 3s ease-in .2s infinite reverse;
-    -webkit-animation: bg-move 3s ease-in .2s infinite reverse;
+    background-color: #F3F1FF;
+    /* animation: bg-move 3s ease-in .2s infinite reverse;
+    -webkit-animation: bg-move 3s ease-in .2s infinite reverse; */
 }
 
-@keyframes bg-move {
+/* @keyframes bg-move {
     from {
         background-image: linear-gradient(#F3F1FF, #9189c2);
         background-repeat: no-repeat;
@@ -17,4 +23,190 @@ body {
         background-image: linear-gradient(#cdc8ec, #7f70e6);
         background-repeat: no-repeat;
     }
+} */
+
+header {
+    height: 94px;
+    background-color: #562EFF;
+    color: ghostwhite;
+    overflow: hidden;
+    animation: header-color 2s ease-in 1s infinite alternate-reverse;
+    -webkit-animation: header-color 2s ease-in 1s infinite alternate-reverse;
+}
+
+@keyframes header-color {
+    from {
+        background-image: linear-gradient(#562EFF, #7218c5);
+    }
+
+    to {
+        background-image: linear-gradient(#553dc2, #3a90e0);
+    }
+}
+
+header .first_span {
+    display: flex;
+}
+
+lord-icon {
+    /* border: 2px solid; */
+}
+
+nav {
+    margin-left: 18%;
+    margin-right: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .first_span h2 {
+    text-shadow: 3px 3px lightgray;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.first_span i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.second_span,
+.first_span {
+    display: flex;
+    padding-top: 20px;
+    /* border: 2px solid; */
+}
+
+.second_span .image {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('https://i.insider.com/58f919d37522ca89008b5025?width=825&format=jpeg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 10px;
+    /* border: 2px solid; */
+    width: 200px;
+    display: flex;
+}
+
+.second_span .links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.second_span hr {
+    display: none;
+    width: 70%;
+    border: none;
+    border-bottom: 3px solid red;
+    margin-left: 5px;
+}
+
+.second_span>.links>a:hover hr {
+    display: block;
+}
+
+
+/* main body part  */
+.first_section {
+    box-sizing: border-box;
+    padding: 1%;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-left: 28%;
+    margin-right: 18%;
+    margin-top: 1%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.first_section h1 {
+    color: #562EFF;
+    font-size: 20px;
+}
+
+.first_sec_div_one .image_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30%;
+}
+
+.image_gallery .people_image {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-size: cover;
+}
+
+.image1 {
+    background-image: url('https://vz.cnwimg.com/wp-content/uploads/2010/04/Lionel-Messi-1-e1588467513958.jpg');
+}
+
+.image2 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg');
+}
+
+.image3 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg');
+}
+
+.image4 {
+    background-image: url('https://i.pinimg.com/474x/f1/86/40/f1864056fcaecc664d57d041e462f7bb.jpg');
+}
+
+.image5 {
+    background-image: url('https://www.callofduty.com/content/dam/atvi/callofduty/mobile/home/characters/characters-ghost.jpg');
+}
+
+.image6 {
+    background-image: url('https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/ogyenjfmmwsaqnz8lrqo.jpg');
+}
+
+.people_image>h3 {
+    margin-left: 60px;
+    font-size: 15px;
+    border-left: 3px solid;
+    border-color: #562EFF;
+    padding-left: 3px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.people_image>h3:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    color: #7218c5;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
 }
